@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        /* background-color: black; */
+        background-image: url("wall.jpg");
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .wraper{
+        width: 500px;
+        padding: 25px;
+        background-color: white;
+        /* background-image: url("wallpaper.jpg"); */
+        margin: 25px auto;
+        box-shadow: 0px 0px 20px  black;
+        border-radius: 10px;
+    }
+    .wraper h2{
+        font-size: 30px;
+        padding: 20px;
+        color: black;
+        text-align: center;
+        margin-bottom: 10px;
+        border: 3px;
+        border-style: solid;
+        border-color: black;
+    }
+    .wraper h3{
+        color: black;
+        padding-bottom: 10px;
+    }
+    .input-group{
+        display: flex;
+        margin-bottom: 8px;
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 0px;
+    }
+    .input-box{
+        margin-right: 20px;
+        width: 100%;
+    }
+    .input-box .name{
+        padding: 10px 10px 10px 10px;
+        width: 100%;
+        border-radius: 10px;
+    }
+    .age{
+        padding: 14px;
+        width: 30%;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .exp{
+        padding: 10px 10px 10px 10px;
+        width: 45%;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .button{
+        font-size: 20px;
+        width: 100%;
+        padding: 10px 10px 10px 10px;
+    }
+    .button:hover{
+        cursor: pointer;
+        background-color: silver;
+    }
+    .input-box #pay{
+        font-size: 15px;
+    }
+    .input-box .pay{
+        width: 100%;
+    }
+
+
+</style>
+<body>
+    <div class ="wraper">
+        <h2>Payment Form:</h2>
+        <div class="input-group">
+            <div class="input-box">
+                <input type="text" class="name" placeholder="Name">
+            </div>
+            <div class="input-box">
+                <input type="text" class="name" placeholder="SurName">
+            </div>
+        </div>
+        <div class="input-group">
+            <div class="input-box">
+                <input type="email" class="name" placeholder="Email-Address">
+            </div>
+        </div>
+        <div class="input-group">
+            <div class="input-box">
+                <input type="text" class="name" placeholder="Address">
+            </div>
+        </div>
+        <h3>Date Of Birth:</h3>
+        <div class="input-group">
+            <div class="input-box">
+                <input type="text" class="age" placeholder="DD">
+                <input type="text" class="age" placeholder="MM">
+                <input type="text" class="age" placeholder="YY">
+            </div>
+        </div>
+        <h4>Gender:</h4>
+        <div class = "input-box">
+            <p>Male:
+                <input type="radio" name="gender" id="pay">
+               Female:
+               <input type="radio" name="gender" id="pay">
+            </p>
+        </div>
+        <h3>Payment Details:</h3>
+        <div class = "input-box">
+            <p>Visa:
+                <i class='bx bxl-visa'></i>
+                <input type="radio" name="pay" id="pay">
+               PayPal:
+               <i class='bx bxl-paypal' ><input type="radio" name="pay" id="pay"></i>
+               Master-Card:
+               <i class='bx bxl-mastercard' ></i>
+               <input type="radio" name="pay" id="pay">
+            </p>
+        </div>
+        <div class="input-group">
+            <div class="input-box">
+                <input type="text" class="name" placeholder="Card - Number">
+            </div>
+        </div>
+        <div class="input-group">
+            <div class="input-box">
+                <input type="text" class="name" placeholder="Card-CVV">
+            </div>
+        </div>
+        <div class="input-group">
+            <div class="input-box">
+                <input type="text" class="exp" placeholder="Exp-Month">
+                <input type="text" class="exp" placeholder="Exp-Year">
+            </div>
+        </div>
+        <div class="input-group">
+            <div class="input-box">
+                <!-- <input type="submit" value="PAY-NOW"> -->
+                <input type="button" value="PAY-NOW" class = "button">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
